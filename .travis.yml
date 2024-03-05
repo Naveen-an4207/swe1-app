@@ -1,7 +1,16 @@
 language: python
 
-python:
-  - 3.11
+matrix:
+  include:
+    - python: 3.8
+      dist: trusty
+      sudo: false
+    - python: 3.10
+      dist: trusty
+      sudo: xenial
+    - python: 3.11
+      dist: xenial
+      sudo: true
 
 install:
   - pip install -r requirements.txt

@@ -6,8 +6,8 @@ matrix:
       dist: trusty
       sudo: false
     - python: 3.10
-      dist: trusty
-      sudo: xenial
+      dist: xenial
+      sudo: true
     - python: 3.11
       dist: xenial
       sudo: true

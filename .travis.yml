@@ -1,16 +1,8 @@
+dist: jammy
 language: python
-
 matrix:
   include:
-    - python: 3.8
-      dist: trusty
-      sudo: false
-    - python: 3.10
-      dist: xenial
-      sudo: true
     - python: 3.11
-      dist: xenial
-      sudo: true
 
 install:
   - pip install -r requirements.txt
